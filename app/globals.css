@@ -1,0 +1,84 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  * {
+    @apply border-gray-200;
+  }
+  
+  body {
+    @apply text-gray-900 antialiased;
+  }
+}
+
+@layer components {
+  .btn-primary {
+    @apply px-4 py-2 bg-blue-600 text-white font-medium rounded-md hover:bg-blue-700 transition-colors disabled:opacity-50 disabled:cursor-not-allowed;
+  }
+  
+  .btn-secondary {
+    @apply px-4 py-2 bg-gray-100 text-gray-700 font-medium rounded-md hover:bg-gray-200 transition-colors;
+  }
+  
+  .input-field {
+    @apply w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent;
+  }
+  
+  .card {
+    @apply bg-white rounded-lg shadow-md border border-gray-200 p-6;
+  }
+}
+
+/* Prose styling pour le contenu markdown */
+.prose {
+  @apply text-gray-900 max-w-none;
+}
+
+.prose p {
+  @apply my-3;
+}
+
+.prose a {
+  @apply text-blue-600 hover:text-blue-800 underline;
+}
+
+.prose strong {
+  @apply font-bold;
+}
+
+.prose em {
+  @apply italic;
+}
+
+.prose code {
+  @apply bg-gray-100 px-1 py-0.5 rounded text-sm font-mono;
+}
+
+.prose pre {
+  @apply bg-gray-100 p-4 rounded-md overflow-x-auto my-4;
+}
+
+.prose blockquote {
+  @apply border-l-4 border-gray-300 pl-4 italic my-4;
+}
+
+.prose ul {
+  @apply list-disc list-inside my-3;
+}
+
+.prose ol {
+  @apply list-decimal list-inside my-3;
+}
+
+.prose h1 {
+  @apply text-2xl font-bold mt-6 mb-3;
+}
+
+.prose h2 {
+  @apply text-xl font-bold mt-5 mb-2;
+}
+
+.prose h3 {
+  @apply text-lg font-bold mt-4 mb-2;
+}
